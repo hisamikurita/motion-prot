@@ -1,0 +1,92 @@
+.animation_body{
+    width: 100%;
+    height: 100%;
+    animation: bg01 20s infinite;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bg span:nth-child(1){
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -5vw;
+    border-top: 23vw solid transparent;
+    border-right: 23vw solid transparent;
+    border-bottom: 23vw solid #006c78;
+    border-left: 23vw solid #117b88;
+    animation: bg02 20s infinite;
+}
+.bg span:nth-child(2){
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 20vw solid transparent;
+    border-right: 20vw solid #cacecf;
+    animation: bg03 20s infinite;
+}
+@keyframes bg01 {
+    0%{
+        background-color: #a8bdc1;
+    }
+    25%{
+        background-color: #beeef7;
+    }
+    50%{
+        background-color: #ffeaa5;
+    }
+    75%{
+        background-color: #e41749;
+    }
+    100%{
+        background-color: #a8bdc1;
+    }
+}
+@keyframes bg02 {
+    0%{
+        border-bottom: 23vw solid #006c78;
+        border-left: 23vw solid #117b88;
+    }
+    25%{
+        border-bottom: 23vw solid #6fc2d0;
+        border-left: 23vw solid #373a6d;
+    }
+    50%{
+        border-bottom: 23vw solid #226b80;
+        border-left: 23vw solid #40a798;
+    }
+    75%{
+        border-bottom: 23vw solid #f5587b;
+        border-left: 23vw solid #ff8a5c;
+    }
+    100%{
+        border-bottom: 23vw solid #006c78;
+        border-left: 23vw solid #117b88;
+    }
+}
+@keyframes bg03 {
+    0%{
+        border-right: 20vw solid #cacecf;
+    }
+    25%{
+        border-right: 20vw solid #ff8246;
+    }
+    50%{
+        border-right: 20vw solid #ffebd3;
+    }
+    75%{
+        border-right: 20vw solid #fff591;
+    }
+    100%{
+        border-right: 20vw solid #cacecf;
+    }
+}

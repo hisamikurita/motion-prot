@@ -1,0 +1,283 @@
+/*=== bg ===*/
+.animation01_hidden{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.animation01_hidden.active:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 1;
+    content: '';
+    animation: animation01_bg_hidden 1.0s ease-out 2s forwards;
+    transform-origin: center;
+}
+@keyframes animation01_bg_hidden{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*=================
+animation01 bg
+==================*/
+.active .animation01 .wrapper div{
+    opacity: 1;
+}
+.active .animation01 .wrapper div:nth-child(1){
+    animation: animation01_box_hidden 1.8s ease-in-out 0.5s forwards;
+}
+.active .animation01 .wrapper div:nth-child(2){
+    animation: animation01_box_hidden 1.8s ease-in-out 0.5s forwards;
+}
+.active .animation01 .wrapper div:nth-child(3){
+    animation: animation01_box_hidden 1.8s ease-in-out 0.5s forwards;
+}
+.active .animation01 .wrapper div:nth-child(4){
+    animation: animation01_box_hidden 1.8s ease-in-out 0.5s forwards;
+}
+@keyframes animation01_box_hidden {
+    0%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(0, 0, 0);
+        opacity: 0;
+    }
+}
+.active .animation01 .wrapper span{
+    opacity: 1;
+}
+.active .animation01 .wrapper span:nth-child(5){
+    animation: animation01_border02_hidden 1.3s ease-in-out 0.5s forwards;
+}
+.active .animation01 .wrapper span:nth-child(6){
+    animation: animation01_border01_hidden 1.3s ease-in-out 0.5s forwards;
+}
+.active .animation01 .wrapper span:nth-child(7){
+    animation: animation01_border02_hidden 1.3s ease-in-out 0.5s forwards;
+}
+.active .animation01 .wrapper span:nth-child(8){
+    animation: animation01_border01_hidden 1.3s ease-in-out 0.5s forwards;
+}
+@keyframes animation01_border01_hidden {
+    0%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(1, 0, 0);
+        opacity: 0;
+    }
+}
+@keyframes animation01_border02_hidden {
+    0%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(0, 1, 0);
+        opacity: 0;
+    }
+}
+.active .animation01 .lavel{
+    animation: animation01_lavel_hidden 0.6s ease-in-out 0.8s forwards;
+    opacity: 1;
+}
+@keyframes animation01_lavel_hidden {
+    0%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(1, 0, 0);
+        opacity: 0;
+    }
+}
+/*=================
+Roboto Font
+==================*/
+.active .font{
+    opacity: 1;
+}
+.active .font:nth-child(1){
+    animation: font_hidden 1.8s ease-in-out forwards;
+}
+.active .font:nth-child(2){
+    animation: font_hidden 1.8s ease-in-out .05s forwards;
+}
+.active .font:nth-child(3){
+    animation: font_hidden 1.8s ease-in-out .10s forwards;
+}
+.active .font:nth-child(4){
+    animation: font_hidden 1.8s ease-in-out .15s forwards;
+}
+.active .font:nth-child(5){
+    animation: font_hidden 1.8s ease-in-out .20s forwards;
+}
+.active .font:nth-child(6){
+    animation: font_hidden 1.8s ease-in-out .25s forwards;
+}
+.active .font:nth-child(7){
+    animation: font_hidden 1.8s ease-in-out .30s forwards;
+}
+.active .font:nth-child(8){
+    animation: font_hidden 1.8s ease-in-out .35s forwards;
+}
+.active .font:nth-child(9){
+    animation: font_hidden 1.8s ease-in-out .40s forwards;
+}
+.active .font:nth-child(10){
+    animation: font_hidden 1.8s ease-in-out .45s forwards;
+}
+.active .font:nth-child(11){
+    animation: font_hidden 1.8s ease-in-out .50s forwards;
+}
+.active .font:nth-child(12){
+    animation: font_hidden 1.8s ease-in-out .55s forwards;
+}
+.active .font:nth-child(13){
+    animation: font_hidden 1.8s ease-in-out .60s forwards;
+}
+.active .font:nth-child(14){
+    animation: font_hidden 1.8s ease-in-out .65s forwards;
+}
+.active .font:nth-child(15){
+    animation: font_hidden 1.8s ease-in-out .70s forwards;
+}
+.active .font:nth-child(16){
+    animation: font_hidden 1.8s ease-in-out .75s forwards;
+}
+.active .font:nth-child(17){
+    animation: font_hidden 1.8s ease-in-out .80s forwards;
+}
+.active .font:nth-child(18){
+    animation: font_hidden 1.8s ease-in-out .85s forwards;
+}
+.active .font:nth-child(19){
+    animation: font_hidden 1.8s ease-in-out .90s forwards;
+}
+.active .font:nth-child(20){
+    animation: font_hidden 1.8s ease-in-out .95s forwards;
+}
+.active .font:nth-child(21){
+    animation: font_hidden 1.8s ease-in-out 1.0s forwards;
+}
+.active .font:nth-child(22){
+    animation: font_hidden 1.8s ease-in-out 1.05s forwards;
+}
+.active .font:nth-child(23){
+    animation: font_hidden 1.8s ease-in-out 1.10s forwards;
+}
+.active .font:nth-child(24){
+    animation: font_hidden 1.8s ease-in-out 1.15s forwards;
+}
+.active .font:nth-child(25){
+    animation: font_hidden 1.8s ease-in-out 1.20s forwards;
+}
+.active .font:nth-child(26){
+    animation: font_hidden 1.8s ease-in-out 1.25s forwards;
+}
+.active .font:nth-child(27){
+    animation: font_hidden 1.8s ease-in-out 1.30s forwards;
+}
+.active .font:nth-child(28){
+    animation: font_hidden 1.8s ease-in-out 1.35s forwards;
+}
+.active .font:nth-child(29){
+    animation: font_hidden 1.8s ease-in-out 1.40s forwards;
+}
+.active .font:nth-child(30){
+    animation: font_hidden 1.8s ease-in-out 1.45s forwards;
+}
+.active .font:nth-child(31){
+    animation: font_hidden 1.8s ease-in-out 1.50s forwards;
+}
+.active .font:nth-child(32){
+    animation: font_hidden 1.8s ease-in-out 1.55s forwards;
+}
+.active .font:nth-child(33){
+    animation: font_hidden 1.8s ease-in-out 1.60s forwards;
+}
+.active .font:nth-child(34){
+    animation: font_hidden 1.8s ease-in-out 1.65s forwards;
+}
+.active .font:nth-child(35){
+    animation: font_hidden 1.8s ease-in-out 1.70s forwards;
+}
+.active .font:nth-child(36){
+    animation: font_hidden 1.8s ease-in-out 1.75s forwards;
+}
+.active .font:nth-child(37){
+    animation: font_hidden 1.8s ease-in-out 1.80s forwards;
+}
+.active .font:nth-child(38){
+    animation: font_hidden 1.8s ease-in-out 1.85s forwards;
+}
+.active .font:nth-child(39){
+    animation: font_hidden 1.8s ease-in-out 1.90s forwards;
+}
+@keyframes font_hidden {
+    0%{
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale3d(0, 0, 0);
+        opacity: 0;
+    }
+}
+/*=================
+animation01 btn
+==================*/
+.active .animation01 .text .btn_wrapper .btn:nth-of-type(1){
+    animation: animation01_btn01_hidden 1.5s ease-out forwards;
+}
+.active .animation01 .text .btn_wrapper .btn:nth-of-type(2){
+    animation: btn02_hidden 1.5s ease-out forwards;
+}
+.active .blog_btn{
+    animation: animation01_btn01_hidden 1.5s ease-out forwards!important;
+}
+@keyframes animation01_btn01_hidden {
+    0%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate3d(-25%, 0, 0);
+        opacity: 0;
+    }
+}
+@keyframes btn02_hidden {
+    0%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate3d(25%, 0, 0);
+        opacity: 0;
+    }
+}
+/*=================
+animation01 sns
+==================*/
+.active .animation01 .text .sns div{
+    animation: animation01_sns_hidden 1.5s ease-out forwards;
+}
+@keyframes animation01_sns_hidden {
+    0%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate3d(55%, 0, 0);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,416 @@
+/*=== bg ===*/
+.animation01{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+.animation01 .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.animation01 .wrapper div{
+    display: block;
+    background-color: #fff;
+    opacity: 0;
+}
+.animation01 .wrapper span{
+    background-color: #333;
+    opacity: 0;
+}
+.animation01 .wrapper div:nth-child(1){
+    width: 55%;
+    height: 55%;
+    animation: animation01_box 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: top left;
+}
+.animation01 .wrapper div:nth-child(2){
+    width: 45%;
+    height: 55%;
+    animation: animation01_box 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: top right;
+}
+.animation01 .wrapper div:nth-child(3){
+    width: 45%;
+    height: 45%;
+    animation: animation01_box 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: bottom left;
+}
+.animation01 .wrapper div:nth-child(4){
+    width: 55%;
+    height: 45%;
+    animation: animation01_box 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: bottom right;
+}
+.animation01 .wrapper span:nth-child(5){
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+    width: 97%;
+    height: 0.5%;
+    animation: animation01_border02 3.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: top left;
+}
+.animation01 .wrapper span:nth-child(6){
+    position: absolute;
+    top: 3%;
+    left: 1.5%;
+    width: 0.34%;
+    height: 94%;
+    animation: animation01_border01 3.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: top right;
+}
+.animation01 .wrapper span:nth-child(7){
+    position: absolute;
+    top: 97%;
+    left: 1.5%;
+    width: 97%;
+    height: 0.5%;
+    animation: animation01_border02 3.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: bottom right;
+}
+.animation01 .wrapper span:nth-child(8){
+    position: absolute;
+    top: 3%;
+    left: 98.5%;
+    width: 0.34%;
+    height: 94.5%;
+    animation: animation01_border01 3.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: bottom left;
+}
+.animation01 .lavel{
+    position: absolute;
+    top: -6%;
+    left: -2.5%;
+    width: 7%;
+    height: 28%;
+    background-color: #333;
+    animation: animation01_lavel 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+    transform-origin: top;
+    opacity: 0;
+}
+@keyframes animation01_box {
+    0%{
+        transform:scale3d(0, 0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+@keyframes animation01_border01 {
+    0%{
+        transform:scale3d(1, 0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+@keyframes animation01_border02 {
+    0%{
+        transform:scale3d(0, 1, 0);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+@keyframes animation01_lavel {
+    0%{
+        transform:scale3d(1, 0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform:scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+/*=== text ===*/
+.animation01 .text{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.animation01 .text h1{
+    margin-bottom: 1.5%;
+    color: #333;
+    font-size: 2.0vw;
+    font-family: Roboto, sans-serif;
+}
+.animation01 .text .copy:nth-of-type(1){
+    margin-bottom: 1%;
+    color: #333;
+    font-size: 3.5vw;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    font-family: Roboto, sans-serif;
+}
+.animation01 .text .copy:nth-of-type(2){
+    margin-bottom: 5%;
+    color: #333;
+    font-size: 1.3vw;
+    letter-spacing: 0.01em;
+    font-family: Roboto, sans-serif;
+}
+
+/*=== btn ===*/
+.animation01 .text .btn_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -1.3% 4.2% 0;
+}
+.animation01 .text .btn_wrapper .btn{
+    position: relative;
+    background: #333;
+    font-size: 1.2vw;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.01em;
+    opacity: 0;
+}
+.animation01 .text .btn_wrapper .btn a{
+    display: block;
+    padding: 0.7vw 5.0vw;
+    color: #fff;
+    text-decoration: none;
+}
+.animation01 .text .btn_wrapper .btn.works{
+    display: block;
+    padding: 0.7vw 5.0vw;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(1){
+    margin: 0 6.0% 0 0;
+    animation: animation01_btn01 1.5s ease-out 2.5s forwards;
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(2){
+    animation: animation01_btn02 1.5s ease-out 2.5s forwards;
+}
+@keyframes animation01_btn01 {
+    0%{
+        transform: translate3d(-25%, 0, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes animation01_btn02 {
+    0%{
+        transform: translate3d(25%, 0, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+/*=== btn hover-action ===*/
+.animation01 .text .btn_wrapper .btn:nth-of-type(1):before{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    width: 1.5vw;
+    height: 0.15vw;
+    background-color: #333;
+    content: '';
+    z-index: 999;
+    transition: 0.6s cubic-bezier(.215,.61,.355,1);
+    transform-origin: left;
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(2):before{
+    position: absolute;
+    top: 50%;
+    left: -9%;
+    width: 1.5vw;
+    height: 0.15vw;
+    background-color: #333;
+    content: '';
+    z-index: 999;
+    transition: 0.6s cubic-bezier(.215,.61,.355,1);
+    transform-origin: left;
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(1):after{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 13.0vw;
+    height: 0.12vw;
+    background-color: #fff;
+    content: '';
+    transform: scale(0.1,1);
+    transition: 0.6s cubic-bezier(.215,.61,.355,1);
+    transform-origin: left;
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(2):after{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 14.0vw;
+    height: 0.12vw;
+    background-color: #fff;
+    content: '';
+    transform: scale(0.1,1);
+    transition: 0.6s cubic-bezier(.215,.61,.355,1);
+    transform-origin: left;
+}
+.animation01 .text .btn_wrapper .btn:hover{
+    overflow: hidden;
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(1):hover:after{
+    transform: scale(1.075,1);
+}
+.animation01 .text .btn_wrapper .btn:hover:after{
+    transform: scale(1,1);
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(1):hover:before{
+    transform: translateX(1.35vw);
+}
+.animation01 .text .btn_wrapper .btn:nth-of-type(2):hover:before{
+    transform: translateX(1.35vw);
+}
+
+.blog_btn{
+    position: relative;
+    width: auto!important;
+    height: auto!important;
+    margin: 0 4.5% 0 0;
+    background: #333;
+    font-size: 1.2vw;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.01em;
+    opacity: 0;
+}
+.blog_btn a{
+    display: block;
+    padding: 0.7vw 5.0vw;
+    color: #fff;
+    text-decoration: none;
+}
+.blog_btn{
+    animation: blog_btn 1.5s ease-out 2.5s forwards;
+}
+@keyframes blog_btn {
+    0%{
+        transform: translate3d(-25%, 0, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.blog_btn:before{
+    position: absolute;
+    top: 50%;
+    left: -9%;
+    width: 1.5vw;
+    height: 0.15vw;
+    background-color: #333;
+    content: '';
+    z-index: 999;
+    transition: 0.6s cubic-bezier(.215,.61,.355,1);
+    transform-origin: left;
+}
+.blog_btn:after{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 13.0vw;
+    height: 0.12vw;
+    background-color: #fff;
+    content: '';
+    transform: scale(0.1,1);
+    transition: 0.6s cubic-bezier(.215,.61,.355,1);
+    transform-origin: left;
+}
+.blog_btn:hover{
+    overflow: hidden;
+}
+.blog_btn:hover:after{
+    transform: scale(1,1);
+}
+.blog_btn:hover:before{
+    transform: translateX(1.35vw);
+}
+/*=================
+animation01 sns
+==================*/
+.animation01 .text .sns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+}
+.animation01 .text .sns div{
+    width: 3vw;
+    height: 3vw;
+    opacity: 0;
+}
+.animation01 .text .sns div:nth-of-type(2){
+    margin: 0 3% 0 0;
+    animation: animation01_sns 1.5s ease-out 2.8s forwards;
+}
+.animation01 .text .sns div:nth-of-type(3){
+    margin: 0 3% 0 0;
+    animation: animation01_sns 1.5s ease-out 2.8s forwards;
+}
+.animation01 .text .sns div:nth-of-type(4){
+    animation: animation01_sns 1.5s ease-out 2.8s forwards;
+}
+@keyframes animation01_sns {
+    0%{
+        transform: translate3d(35%, 0, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+path {
+    fill: #333;
+    stroke: transparent;
+}
+svg:hover path {
+-webkit-animation: stroke 2.5s ease-in-out forwards;
+animation: stroke 2.5s ease-in-out forwards;
+stroke: #333;
+stroke-dasharray: 1800;
+stroke-dashoffset: 0;
+stroke-width: 1;
+}
+@keyframes stroke {
+0% {
+    fill: #333;
+    stroke-dashoffset: 1800;
+}
+10% {
+    fill: transparent;
+}
+80% {
+    fill: transparent;
+}
+100% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+}
+}
