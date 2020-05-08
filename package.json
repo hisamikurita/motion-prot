@@ -1,0 +1,36 @@
+{
+  "name": "motion-prot",
+  "version": "1.0.0",
+  "description": "![スクリーンショット (49)](https://user-images.githubusercontent.com/47776346/61227828-05f2ad80-a760-11e9-81cd-87481c823ef9.png)",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.4.4",
+    "browser-sync": "^2.26.3",
+    "csswring": "^7.0.0",
+    "gulp": "^4.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^6.0.1",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "sparkles": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisamikurita/my_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hisamikurita/my_portfolio/issues"
+  },
+  "homepage": "https://github.com/hisamikurita/my_portfolio#readme"
+}
