@@ -9,3 +9,12 @@
 ![FireShot Capture 095 - motion-prot - hisamikurita github io](https://user-images.githubusercontent.com/47776346/68080497-006cc080-fe40-11e9-96a2-770c423b1b1a.png)
 
 ![FireShot Capture 096 - motion-prot - hisamikurita github io](https://user-images.githubusercontent.com/47776346/68080499-0498de00-fe40-11e9-8b32-1c78addac46a.png)
+
+## Usage
+* Clone repository<br>
+* Install Node.js<br>
+* Run following commands<br>
+```
+  npm install  
+  npx gulp 
+```
